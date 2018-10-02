@@ -17,3 +17,12 @@ Boot your image and try running:
 iex> RpiVideo.play("/path/to/test.h264")
 ```
 
+## Video conversion
+
+If your video isn't an H.264 video, you'll need to convert it.
+
+Try installing `ffmpeg` and running:
+
+```sh
+ffmpeg -i /path/to/input.mov output.h264
+```
