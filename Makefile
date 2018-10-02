@@ -43,8 +43,8 @@ endif
 DEFAULT_TARGETS ?= priv priv/rpi_video
 
 # Link in the VideoCore libraries
-LDFLAGS += -lilclient -lopenmaxil -lvcilcs -lbrcmGLESv2 -lbrcmEGL -lbcm_host\
-	   -lvchostif -lvcfiled_check -lvchiq_arm -lvcos -lpthread -lrt -lm
+LDFLAGS += -lopenmaxil -lvcilcs -lbrcmGLESv2 -lbrcmEGL -lbcm_host -lvchostif\
+	   -lvcfiled_check -lvchiq_arm -lvcos -lpthread -lrt -lm
 
 CFLAGS += -DEGL_SERVER_DISPMANX -DHAVE_VMCS_CONFIG -DOMX_SKIP64BIT\
 	  -DTV_SUPPORTED_MODE_NO_DEPRECATED -DUSE_VCHIQ_ARM -DVCHI_BULK_ALIGN=1\
